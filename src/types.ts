@@ -15,3 +15,8 @@ export type WardrobeItem = {
   price_usd: number
   favorite: boolean
 }
+
+export type Filter =
+  | { kind: "drawer"; drawer: WardrobeItem["drawer"] }
+  | { kind: "favorite"; value: boolean }
+  | { kind: "price"; min: number; max: number }
