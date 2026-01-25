@@ -1,6 +1,6 @@
 import type { WardrobeItem } from "./types"
 
-export const mockWardrobe: WardrobeItem[] = [
+export const exampleWardrobe: WardrobeItem[] = [
   {
     id: "1",
     name: "Black ribbed tank",
