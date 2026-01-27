@@ -3,6 +3,7 @@ import "./App.css"
 import { exampleWardrobe } from "./exampleWardrobe"
 import { applyFilters } from "./filtering"
 import type { Filter } from "./types"
+import { loadPreset, savePreset } from "./presets"
 
 function App() {
   const [drawer, setDrawer] = useState<
@@ -15,8 +16,26 @@ function App() {
     | "Accessories"
   >("All")
   const [onlyFavorites, setOnlyFavorites] = useState(false)
-
   const [maxPrice, setMaxPrice] = useState<number>(200)
+
+  function handleSave() {
+    savePreset({ drawer, onlyFavorites, maxPrice })
+  }
+
+  function handleLoad() {
+    const preset = loadPreset()
+    if (!preset) return
+
+    setDrawer(preset.drawer)
+    setOnlyFavorites(preset.onlyFavorites)
+    setMaxPrice(preset.maxPrice)
+  }
+
+  function handleReset() {
+    setDrawer("All")
+    setOnlyFavorites(false)
+    setMaxPrice(200)
+  }
 
   const filters: Filter[] = useMemo(() => {
     const next: Filter[] = []
@@ -80,6 +99,12 @@ function App() {
           />
           <span>{maxPrice}</span>
         </label>
+
+        <div style={{ display: "flex", gap: 8 }}>
+          <button onClick={handleSave}>Save preset</button>
+          <button onClick={handleLoad}>Load preset</button>
+          <button onClick={handleReset}>Reset</button>
+        </div>
       </div>
 
       <ul>
