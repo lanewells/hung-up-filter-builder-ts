@@ -16,14 +16,18 @@ function App() {
   >("All")
   const [onlyFavorites, setOnlyFavorites] = useState(false)
 
+  const [maxPrice, setMaxPrice] = useState<number>(200)
+
   const filters: Filter[] = useMemo(() => {
     const next: Filter[] = []
 
     if (drawer !== "All") next.push({ kind: "drawer", drawer })
     if (onlyFavorites) next.push({ kind: "favorite", value: true })
 
+    next.push({ kind: "price", min: 0, max: maxPrice })
+
     return next
-  }, [drawer, onlyFavorites])
+  }, [drawer, onlyFavorites, maxPrice])
 
   const filtered = applyFilters(exampleWardrobe, filters)
 
@@ -62,6 +66,19 @@ function App() {
             onChange={(e) => setOnlyFavorites(e.target.checked)}
           />
           Only favorites
+        </label>
+
+        <label style={{ display: "flex", gap: 8, alignItems: "center" }}>
+          Max price $
+          <input
+            type="range"
+            min={0}
+            max={300}
+            step={5}
+            value={maxPrice}
+            onChange={(e) => setMaxPrice(Number(e.target.value))}
+          />
+          <span>{maxPrice}</span>
         </label>
       </div>
 
