@@ -18,5 +18,14 @@ export const exampleWardrobe: WardrobeItem[] = [
     color: "navy",
     price_usd: 89,
     favorite: false
+  },
+  {
+    id: "3",
+    name: "Analog watch",
+    brand: "Timex",
+    drawer: "Accessories",
+    color: "silver",
+    price_usd: 65,
+    favorite: false
   }
 ]
