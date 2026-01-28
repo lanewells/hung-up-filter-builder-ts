@@ -5,38 +5,56 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: "Safira March";
+  src: url("../assets/fonts/safira-march.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+:root {
+  --bg-color-pri: #f2efe9;
+  --bg-color-sec: #e9e5dc;
+  --txt-color-dk: #262626;
+  --txt-color-lt: white;
+  --font-main: "Josefin Sans", "Helvetica Neue", sans-serif;
+  --font-heading: "Safira March", Georgia, serif;
 }
 
-.card {
-  padding: 2em;
+.app {
+  padding: 24px;
+  font-family: var(--font-main);
 }
 
-.read-the-docs {
-  color: #888;
+h1,
+h3 {
+  font-family: var(--font-heading);
+}
+.controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.inline {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+select,
+button,
+input[type="range"] {
+  font: inherit;
 }

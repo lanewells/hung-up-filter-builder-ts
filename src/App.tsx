@@ -51,17 +51,11 @@ function App() {
   const filtered = applyFilters(exampleWardrobe, filters)
 
   return (
-    <main style={{ padding: 24, fontFamily: "Arial, sans-serif" }}>
-      <h1>Hung-Up Filter Builder (TS)</h1>
+    <main className="app">
+      <h3>Hung-Up</h3>
+      <h1>Filter Builder</h1>
 
-      <div
-        style={{
-          display: "flex",
-          gap: 16,
-          alignItems: "center",
-          margin: "16px 0"
-        }}
-      >
+      <div className="controls">
         <label>
           Drawer{" "}
           <select
@@ -78,7 +72,7 @@ function App() {
           </select>
         </label>
 
-        <label style={{ display: "flex", gap: 8, alignItems: "center" }}>
+        <label className="inline">
           <input
             type="checkbox"
             checked={onlyFavorites}
@@ -87,7 +81,7 @@ function App() {
           Only favorites
         </label>
 
-        <label style={{ display: "flex", gap: 8, alignItems: "center" }}>
+        <label className="inline">
           Max price $
           <input
             type="range"
@@ -100,7 +94,7 @@ function App() {
           <span>{maxPrice}</span>
         </label>
 
-        <div style={{ display: "flex", gap: 8 }}>
+        <div className="buttons">
           <button onClick={handleSave}>Save preset</button>
           <button onClick={handleLoad}>Load preset</button>
           <button onClick={handleReset}>Reset</button>
