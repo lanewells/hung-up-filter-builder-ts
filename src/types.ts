@@ -13,6 +13,7 @@ export type WardrobeItem = {
   drawer: Drawer
   color: string
   price_usd: number
+  image_url: string
   favorite: boolean
 }
 
