@@ -16,7 +16,7 @@ function App() {
     | "Accessories"
   >("All")
   const [onlyFavorites, setOnlyFavorites] = useState(false)
-  const [maxPrice, setMaxPrice] = useState<number>(200)
+  const [maxPrice, setMaxPrice] = useState<number>(300)
 
   function handleSave() {
     savePreset({ drawer, onlyFavorites, maxPrice })
@@ -34,7 +34,7 @@ function App() {
   function handleReset() {
     setDrawer("All")
     setOnlyFavorites(false)
-    setMaxPrice(200)
+    setMaxPrice(300)
   }
 
   const filters: Filter[] = useMemo(() => {
