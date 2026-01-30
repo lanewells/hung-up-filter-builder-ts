@@ -1,42 +1,241 @@
+@font-face {
+  font-family: "Safira March";
+  src: url("./assets/fonts/safira-march.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --bg-color-pri: #f2efe9;
+  --bg-color-sec: #e9e5dc;
+  --txt-color-dk: #262626;
+  --txt-color-lt: white;
+  --font-main: "Josefin Sans", "Helvetica Neue", sans-serif;
+  --font-heading: "Safira March", Georgia, serif;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 200px 2rem 2rem 2rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+html {
+  font-size: 16px;
+  scrollbar-gutter: stable;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+  background: var(--bg-color-pri);
+  font-family: var(--font-main);
+}
+
+html,
+body,
+#root {
+  margin: 0;
+}
+
+.app {
+  padding: 24px;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-color-sec);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 5px;
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.inline {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+select,
+button,
+input[type="range"] {
+  font: inherit;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.btnPri,
+.btnSec {
+  all: unset;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1;
+
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+
+  transition:
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+
+.btnPri {
+  background-color: var(--txt-color-dk);
+  color: var(--txt-color-lt);
+  border-color: transparent;
+
+  &:hover {
+    opacity: 70%;
+  }
+
+  &:active {
+    background-color: #151515;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.btnSec {
+  background-color: var(--bg-color-pri);
+  color: var(--txt-color-dk);
+  border-color: var(--txt-color-dk);
+
+  &:hover {
+    background-color: var(--bg-color-sec);
+    box-shadow: inset 0 2px 4px #2626264d;
+    border-color: inherit;
+  }
+
+  &:active {
+    background-color: #ddd8cc;
+    border-color: inherit;
   }
 }
 
-.card {
-  padding: 2em;
+.checkbox {
+  margin-right: 0;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  background-color: var(--bg-color-pri);
+  border: 1.5px solid var(--txt-color-dk);
+  border-radius: 4px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  position: relative;
+
+  &:checked {
+    background-color: var(--txt-color-dk);
+  }
+
+  &:checked::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--txt-color-lt);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--txt-color-dk);
+    outline-offset: 2px;
+  }
 }
 
-.read-the-docs {
-  color: #888;
+@media (max-width: 768px) {
+  #root {
+    padding-top: 190px;
+  }
+
+  main {
+    margin: 0 20px 24px 20px;
+  }
+
+  .pageTitle {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+
+  .link {
+    display: flex;
+    width: 100%;
+  }
+
+  .btnPri,
+  .btnSec {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    padding: 0.6rem 0.85rem;
+    font-size: 0.95rem;
+    justify-content: center;
+    font-size: 1rem;
+
+    &:disabled {
+      font-size: 1rem;
+    }
+  }
 }

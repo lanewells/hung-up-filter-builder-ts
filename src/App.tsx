@@ -51,62 +51,64 @@ function App() {
   const filtered = applyFilters(exampleWardrobe, filters)
 
   return (
-    <main style={{ padding: 24, fontFamily: "Arial, sans-serif" }}>
-      <h1>Hung-Up Filter Builder (TS)</h1>
+    <main className="app">
+      <header>
+        <h3>Hung-Up</h3>
+        <h1>Filter Builder</h1>
 
-      <div
-        style={{
-          display: "flex",
-          gap: 16,
-          alignItems: "center",
-          margin: "16px 0"
-        }}
-      >
-        <label>
-          Drawer{" "}
-          <select
-            value={drawer}
-            onChange={(e) => setDrawer(e.target.value as typeof drawer)}
-          >
-            <option value="All">All</option>
-            <option value="Tops">Tops</option>
-            <option value="Bottoms">Bottoms</option>
-            <option value="One-pieces">One-pieces</option>
-            <option value="Outerwear">Outerwear</option>
-            <option value="Shoes">Shoes</option>
-            <option value="Accessories">Accessories</option>
-          </select>
-        </label>
+        <div className="controls">
+          <label>
+            Drawer{" "}
+            <select
+              value={drawer}
+              onChange={(e) => setDrawer(e.target.value as typeof drawer)}
+            >
+              <option value="All">All</option>
+              <option value="Tops">Tops</option>
+              <option value="Bottoms">Bottoms</option>
+              <option value="One-pieces">One-pieces</option>
+              <option value="Outerwear">Outerwear</option>
+              <option value="Shoes">Shoes</option>
+              <option value="Accessories">Accessories</option>
+            </select>
+          </label>
 
-        <label style={{ display: "flex", gap: 8, alignItems: "center" }}>
-          <input
-            type="checkbox"
-            checked={onlyFavorites}
-            onChange={(e) => setOnlyFavorites(e.target.checked)}
-          />
-          Only favorites
-        </label>
+          <label className="inline">
+            <input
+              className="checkbox"
+              type="checkbox"
+              checked={onlyFavorites}
+              onChange={(e) => setOnlyFavorites(e.target.checked)}
+            />
+            Only favorites
+          </label>
 
-        <label style={{ display: "flex", gap: 8, alignItems: "center" }}>
-          Max price $
-          <input
-            type="range"
-            min={0}
-            max={300}
-            step={5}
-            value={maxPrice}
-            onChange={(e) => setMaxPrice(Number(e.target.value))}
-          />
-          <span>{maxPrice}</span>
-        </label>
+          <label className="inline">
+            Max price $
+            <input
+              type="range"
+              min={0}
+              max={300}
+              step={5}
+              value={maxPrice}
+              onChange={(e) => setMaxPrice(Number(e.target.value))}
+            />
+            <span>{maxPrice}</span>
+          </label>
 
-        <div style={{ display: "flex", gap: 8 }}>
-          <button onClick={handleSave}>Save preset</button>
-          <button onClick={handleLoad}>Load preset</button>
-          <button onClick={handleReset}>Reset</button>
+          <div className="buttons">
+            <button className="btnSec" onClick={handleSave}>
+              Save preset
+            </button>
+            <button className="btnSec" onClick={handleLoad}>
+              Load preset
+            </button>
+            <button className="btnSec" onClick={handleReset}>
+              Reset
+            </button>
+          </div>
         </div>
-      </div>
-
+      </header>
       <ul>
         {filtered.map((item) => (
           <li key={item.id}>
