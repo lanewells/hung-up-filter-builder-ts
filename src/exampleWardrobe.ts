@@ -8,7 +8,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "black",
     price_usd: 25,
-    image_url: "./assets/image.jpg",
+    image_url: "/black-ribbed-tank.jpg",
     favorite: true
   },
   {
@@ -18,7 +18,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "navy",
     price_usd: 89,
-    image_url: "./assets/image.jpg",
+    image_url: "/navy-trousers.jpg",
     favorite: false
   },
   {
@@ -28,7 +28,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Accessories",
     color: "silver",
     price_usd: 65,
-    image_url: "./assets/image.jpg",
+    image_url: "/timex-watch.jpg",
     favorite: false
   },
 
@@ -39,7 +39,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "orange",
     price_usd: 110,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/orange-shorts.jpg",
     favorite: false
   },
   {
@@ -49,7 +49,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "blue",
     price_usd: 128,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/light-wash-jean-shorts.jpg",
     favorite: false
   },
   {
@@ -59,7 +59,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "blue",
     price_usd: 58,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/blue-running-shorts.jpg",
     favorite: false
   },
   {
@@ -69,7 +69,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "black",
     price_usd: 68,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/black-spandex-shorts.jpg",
     favorite: false
   },
   {
@@ -79,7 +79,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "blue",
     price_usd: 95,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/low-rise-jean-shorts.jpg",
     favorite: false
   },
   {
@@ -89,7 +89,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "white",
     price_usd: 78,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/white-shorts.jpg",
     favorite: false
   },
 
@@ -100,7 +100,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "blue",
     price_usd: 98,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/blue-jeans.jpg",
     favorite: true
   },
   {
@@ -110,7 +110,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "khaki",
     price_usd: 145,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/khaki-chinos.jpg",
     favorite: false
   },
   {
@@ -120,7 +120,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "olive",
     price_usd: 135,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/olive-cargo-pants.jpg",
     favorite: false
   },
   {
@@ -130,7 +130,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "grey",
     price_usd: 118,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/grey-joggers.jpg",
     favorite: false
   },
   {
@@ -140,7 +140,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "grey",
     price_usd: 98,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/grey-leggings.jpg",
     favorite: false
   },
 
@@ -151,7 +151,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "pink",
     price_usd: 55,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/pink-mini-skirt.jpg",
     favorite: false
   },
   {
@@ -161,7 +161,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "black",
     price_usd: 65,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/tennis-skirt.jpg",
     favorite: false
   },
   {
@@ -171,7 +171,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "brown",
     price_usd: 168,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/maxi-skirt.jpg",
     favorite: false
   },
   {
@@ -181,7 +181,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "blue",
     price_usd: 135,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/maxi-skirt.jpg",
     favorite: false
   },
   {
@@ -191,7 +191,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "yellow",
     price_usd: 85,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/yellow-skort.jpg",
     favorite: false
   },
 
@@ -202,7 +202,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "white",
     price_usd: 55,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/white-tee.jpg",
     favorite: false
   },
   {
@@ -212,7 +212,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "red",
     price_usd: 38,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/red-v-neck.jpg",
     favorite: false
   },
   {
@@ -222,7 +222,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "teal",
     price_usd: 25,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/teal-crew-neck.jpg",
     favorite: false
   },
   {
@@ -232,7 +232,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "blue",
     price_usd: 45,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/teal-crew-neck.jpg",
     favorite: false
   },
 
@@ -243,7 +243,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "white",
     price_usd: 220,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/white-button-down.jpg",
     favorite: false
   },
   {
@@ -253,7 +253,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "purple",
     price_usd: 165,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/purple-peplum.jpg",
     favorite: false
   },
   {
@@ -263,7 +263,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "mauve",
     price_usd: 148,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/mauve-wrap-blouse.jpg",
     favorite: false
   },
   {
@@ -273,7 +273,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "pink",
     price_usd: 79,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/pink-sleeveless.jpg",
     favorite: false
   },
 
@@ -284,7 +284,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "red",
     price_usd: 95,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/red-halter.jpg",
     favorite: false
   },
   {
@@ -294,7 +294,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "black",
     price_usd: 38,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/black-racerback.jpg",
     favorite: false
   },
   {
@@ -304,7 +304,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "taupe",
     price_usd: 88,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/taupe-muscle-tank.jpg",
     favorite: false
   },
   {
@@ -314,7 +314,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "black",
     price_usd: 45,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/black-racerback.jpg",
     favorite: false
   },
   {
@@ -324,7 +324,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "multicolor",
     price_usd: 165,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/rainbow-cardigan.jpg",
     favorite: false
   },
   {
@@ -334,7 +334,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "teal",
     price_usd: 98,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/teal-pullover.jpg",
     favorite: false
   },
   {
@@ -344,7 +344,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "cream",
     price_usd: 125,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/cream-turtleneck.jpg",
     favorite: false
   },
   {
@@ -354,7 +354,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "grey",
     price_usd: 110,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/grey-crewneck.jpg",
     favorite: false
   },
 
@@ -365,7 +365,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "One-pieces",
     color: "burgundy",
     price_usd: 129,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/burgundy-shift-dress.jpg",
     favorite: false
   },
   {
@@ -375,7 +375,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "One-pieces",
     color: "black",
     price_usd: 198,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/little-black-dress.jpg",
     favorite: false
   },
   {
@@ -385,7 +385,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "One-pieces",
     color: "white",
     price_usd: 250,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/white-slip-dress.jpg",
     favorite: false
   },
   {
@@ -395,7 +395,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "One-pieces",
     color: "turquoise",
     price_usd: 210,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/turquoise-bodycon.jpg",
     favorite: false
   },
   {
@@ -405,7 +405,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "One-pieces",
     color: "blush",
     price_usd: 235,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/blush-ruffle-dress.jpg",
     favorite: false
   },
 
@@ -416,7 +416,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "One-pieces",
     color: "navy",
     price_usd: 118,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/navy-romper.jpg",
     favorite: false
   },
   {
@@ -426,7 +426,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "One-pieces",
     color: "black",
     price_usd: 165,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/utility-jumpsuit.jpg",
     favorite: false
   },
   {
@@ -436,7 +436,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "One-pieces",
     color: "marine",
     price_usd: 285,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/marine-business-jumpsuit.jpg",
     favorite: false
   },
   {
@@ -446,7 +446,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "One-pieces",
     color: "forest green",
     price_usd: 190,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/utility-jumpsuit.jpg",
     favorite: false
   },
 
@@ -457,7 +457,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "One-pieces",
     color: "blue",
     price_usd: 128,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/denim-overalls.jpg",
     favorite: false
   },
   {
@@ -467,7 +467,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "One-pieces",
     color: "camel",
     price_usd: 110,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/camel-corduroy-coveralls.jpg",
     favorite: false
   },
   {
@@ -477,7 +477,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "One-pieces",
     color: "black",
     price_usd: 95,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/black-shortalls.jpg",
     favorite: false
   },
 
@@ -488,7 +488,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "white",
     price_usd: 150,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/white-low-top-sneakers.jpg",
     favorite: false
   },
   {
@@ -498,7 +498,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "white",
     price_usd: 85,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/white-high-tops.jpg",
     favorite: false
   },
   {
@@ -508,7 +508,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "red",
     price_usd: 60,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/red-slip-ons.jpg",
     favorite: false
   },
   {
@@ -518,7 +518,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "grey",
     price_usd: 140,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/grey-sneakers.jpg",
     favorite: false
   },
   {
@@ -528,7 +528,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "brown",
     price_usd: 295,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/brown-cowboy.jpg",
     favorite: true
   },
   {
@@ -538,7 +538,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "black",
     price_usd: 220,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/black-knee-highs.jpg",
     favorite: false
   },
   {
@@ -548,7 +548,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "tan",
     price_usd: 210,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/steel-toed-boots.jpg",
     favorite: false
   },
   {
@@ -558,7 +558,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "blue",
     price_usd: 180,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/blue-snow-boots.jpg",
     favorite: false
   },
 
@@ -569,7 +569,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "grey",
     price_usd: 140,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/grey-oxfords.jpg",
     favorite: false
   },
   {
@@ -579,7 +579,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "blush",
     price_usd: 295,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/blush-heels.jpg",
     favorite: false
   },
   {
@@ -589,7 +589,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "hot pink",
     price_usd: 150,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/pink-platforms.jpg",
     favorite: false
   },
   {
@@ -599,7 +599,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "red",
     price_usd: 50,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/red-crocs.jpg",
     favorite: false
   },
 
@@ -610,7 +610,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "tan",
     price_usd: 110,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/tan-birks.jpg",
     favorite: false
   },
   {
@@ -620,7 +620,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "nude",
     price_usd: 145,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/nude-espadrilles.jpg",
     favorite: false
   },
   {
@@ -630,7 +630,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "yellow",
     price_usd: 28,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/yellow-flip-flops.jpg",
     favorite: false
   },
   {
@@ -640,7 +640,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Shoes",
     color: "charcoal",
     price_usd: 45,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/charcoal-slides.jpg",
     favorite: false
   },
   {
@@ -650,7 +650,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Accessories",
     color: "green",
     price_usd: 65,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/green-baseball-cap.jpg",
     favorite: false
   },
   {
@@ -660,7 +660,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Accessories",
     color: "yellow",
     price_usd: 48,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/yellow-bucket-hat.jpg",
     favorite: false
   },
   {
@@ -670,7 +670,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Accessories",
     color: "red",
     price_usd: 120,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/red-beanie.jpg",
     favorite: false
   },
   {
@@ -680,7 +680,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Accessories",
     color: "blue",
     price_usd: 30,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/blue-visor.jpg",
     favorite: false
   },
 
@@ -691,7 +691,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Accessories",
     color: "black",
     price_usd: 52,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/black-leather-belt.jpg",
     favorite: false
   },
   {
@@ -701,7 +701,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Accessories",
     color: "off-white",
     price_usd: 45,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/canvas-belt.jpg",
     favorite: false
   },
   {
@@ -711,7 +711,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Accessories",
     color: "tan",
     price_usd: 135,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/braided-belt.jpg",
     favorite: false
   },
   {
@@ -721,7 +721,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Accessories",
     color: "brown",
     price_usd: 110,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/brown-buckle-belt.jpg",
     favorite: false
   },
 
@@ -732,7 +732,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Outerwear",
     color: "nude",
     price_usd: 690,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/trench-coat.jpg",
     favorite: false
   },
   {
@@ -742,7 +742,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Outerwear",
     color: "black",
     price_usd: 320,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/black-puffer-jacket.jpg",
     favorite: true
   },
   {
@@ -752,7 +752,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Outerwear",
     color: "sage green",
     price_usd: 399,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/sage-green-snow-jacket.jpg",
     favorite: false
   },
   {
@@ -762,7 +762,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Outerwear",
     color: "red",
     price_usd: 895,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/red-parka.jpg",
     favorite: false
   },
 
@@ -773,7 +773,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Outerwear",
     color: "brown",
     price_usd: 190,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/bomber-jacket.jpg",
     favorite: false
   },
   {
@@ -783,7 +783,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Outerwear",
     color: "brown",
     price_usd: 499,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/brown-leather-jacket.jpg",
     favorite: false
   },
   {
@@ -793,7 +793,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Outerwear",
     color: "navy",
     price_usd: 395,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/navy-blazer.jpg",
     favorite: false
   },
   {
@@ -803,7 +803,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Outerwear",
     color: "blue",
     price_usd: 118,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/jean-jacket.jpg",
     favorite: false
   },
   {
@@ -813,7 +813,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Outerwear",
     color: "purple",
     price_usd: 95,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/purple-windbreaker.jpg",
     favorite: false
   },
 
@@ -824,7 +824,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Accessories",
     color: "black",
     price_usd: 140,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/black-leather-gloves.jpg",
     favorite: false
   },
   {
@@ -834,7 +834,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Accessories",
     color: "grey",
     price_usd: 25,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/grey-wool-gloves.jpg",
     favorite: false
   },
   {
@@ -844,7 +844,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Accessories",
     color: "white",
     price_usd: 85,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/white-snow-mittens.jpg",
     favorite: false
   },
   {
@@ -854,7 +854,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Accessories",
     color: "black",
     price_usd: 35,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/black-leather-gloves.jpg",
     favorite: false
   },
 
@@ -865,7 +865,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Outerwear",
     color: "red",
     price_usd: 70,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/red-puffer-vest.jpg",
     favorite: false
   },
   {
@@ -875,7 +875,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Outerwear",
     color: "white",
     price_usd: 88,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/white-denim-vest.jpg",
     favorite: false
   },
   {
@@ -885,7 +885,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Outerwear",
     color: "olive",
     price_usd: 230,
-    image_url: "/placeholder-img.jpg",
+    image_url: "/olive-utility-vest.jpg",
     favorite: false
   },
   {
@@ -895,16 +895,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Outerwear",
     color: "green",
     price_usd: 165,
-    image_url: "/placeholder-img.jpg",
-    favorite: false
-  },
-  {
-    id: "3",
-    name: "Analog watch",
-    brand: "Timex",
-    drawer: "Accessories",
-    color: "silver",
-    price_usd: 65,
+    image_url: "/green-quilted-vest.jpg",
     favorite: false
   }
 ]
