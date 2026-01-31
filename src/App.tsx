@@ -182,7 +182,7 @@ function App() {
 
       <section className="results">
         <div className="results-header">
-          <h2 className="results-title">Items</h2>
+          <h2 className="results-title">Wardrobe Items</h2>
           <p className="results-count">{sorted.length} shown</p>
         </div>
 
