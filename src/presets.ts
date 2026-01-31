@@ -1,5 +1,12 @@
 import { z } from "zod"
 
+const SortModeSchema = z.enum([
+  "price-asc",
+  "price-desc",
+  "name-asc",
+  "name-desc"
+])
+
 const PresetSchema = z.object({
   drawer: z.enum([
     "All",
@@ -11,7 +18,8 @@ const PresetSchema = z.object({
     "Accessories"
   ]),
   onlyFavorites: z.boolean(),
-  maxPrice: z.number()
+  maxPrice: z.number(),
+  sortMode: SortModeSchema.optional().default("price-asc")
 })
 
 export type Preset = z.infer<typeof PresetSchema>
