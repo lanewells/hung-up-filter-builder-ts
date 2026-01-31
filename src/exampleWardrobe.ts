@@ -181,7 +181,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Bottoms",
     color: "blue",
     price_usd: 135,
-    image_url: "/maxi-skirt.jpg",
+    image_url: "/blue-skirt.jpg",
     favorite: false
   },
   {
@@ -232,7 +232,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "blue",
     price_usd: 45,
-    image_url: "/teal-crew-neck.jpg",
+    image_url: "/blue-long-sleeve.jpg",
     favorite: false
   },
 
@@ -314,7 +314,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "Tops",
     color: "black",
     price_usd: 45,
-    image_url: "/black-racerback.jpg",
+    image_url: "/black-tank.jpg",
     favorite: false
   },
   {
@@ -426,7 +426,7 @@ export const exampleWardrobe: WardrobeItem[] = [
     drawer: "One-pieces",
     color: "black",
     price_usd: 165,
-    image_url: "/utility-jumpsuit.jpg",
+    image_url: "/black-jumpsuit.jpg",
     favorite: false
   },
   {
@@ -707,7 +707,7 @@ export const exampleWardrobe: WardrobeItem[] = [
   {
     id: "70",
     name: "Tan braided belt",
-    brand: "Anderson’s",
+    brand: "Anderson's",
     drawer: "Accessories",
     color: "tan",
     price_usd: 135,
@@ -799,7 +799,7 @@ export const exampleWardrobe: WardrobeItem[] = [
   {
     id: "79",
     name: "Blue denim jacket",
-    brand: "Levi’s",
+    brand: "Levi's",
     drawer: "Outerwear",
     color: "blue",
     price_usd: 118,
