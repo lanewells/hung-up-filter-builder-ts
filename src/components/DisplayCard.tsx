@@ -1,5 +1,5 @@
 import "./DisplayCard.css"
-import type { WardrobeItem } from "./types"
+import type { WardrobeItem } from "../types"
 
 type DisplayCardItem = Pick<
   WardrobeItem,

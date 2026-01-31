@@ -1,10 +1,10 @@
 import { useState, useMemo } from "react"
 import "./App.css"
-import { exampleWardrobe } from "./exampleWardrobe"
-import { applyFilters } from "./filtering"
+import { exampleWardrobe } from "./data/exampleWardrobe"
+import { applyFilters } from "./utils/filtering"
 import type { Filter } from "./types"
-import { loadPreset, savePreset } from "./presets"
-import DisplayCard from "./DisplayCard"
+import { loadPreset, savePreset } from "./utils/presets"
+import DisplayCard from "./components/DisplayCard"
 
 type SortMode = "price-asc" | "price-desc" | "name-asc" | "name-desc"
 
@@ -23,7 +23,7 @@ function App() {
     | "Accessories"
   >("All")
   const [onlyFavorites, setOnlyFavorites] = useState(false)
-  const [maxPrice, setMaxPrice] = useState<number>(300)
+  const [maxPrice, setMaxPrice] = useState<number>(700)
   const [sortMode, setSortMode] = useState<SortMode>("price-asc")
 
   function handleSave() {
@@ -43,7 +43,7 @@ function App() {
   function handleReset() {
     setDrawer("All")
     setOnlyFavorites(false)
-    setMaxPrice(300)
+    setMaxPrice(700)
     setSortMode("price-asc")
   }
 
@@ -142,11 +142,11 @@ function App() {
             <input
               type="range"
               min={0}
-              max={300}
+              max={800}
               step={5}
               value={maxPrice}
               style={{
-                ["--value" as any]: `${(maxPrice / 300) * 100}%`
+                ["--value" as any]: `${(maxPrice / 800) * 100}%`
               }}
               onChange={(e) => setMaxPrice(Number(e.target.value))}
             />
