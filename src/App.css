@@ -229,7 +229,13 @@ button {
   gap: 16px;
 }
 
-/* customize default slider */
+.range-value {
+  display: inline-block;
+  width: 3ch;
+  text-align: right;
+}
+
+/* custom default slider */
 
 input[type="range"] {
   -webkit-appearance: none;

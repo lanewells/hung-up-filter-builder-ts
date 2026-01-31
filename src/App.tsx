@@ -4,6 +4,7 @@ import { exampleWardrobe } from "./exampleWardrobe"
 import { applyFilters } from "./filtering"
 import type { Filter } from "./types"
 import { loadPreset, savePreset } from "./presets"
+import DisplayCard from "./DisplayCard"
 
 function App() {
   const [drawer, setDrawer] = useState<
@@ -91,33 +92,40 @@ function App() {
               max={300}
               step={5}
               value={maxPrice}
+              style={{
+                ["--value" as any]: `${(maxPrice / 300) * 100}%`
+              }}
               onChange={(e) => setMaxPrice(Number(e.target.value))}
             />
-            <span>{maxPrice}</span>
+            <span className="range-value">{maxPrice}</span>
           </label>
 
           <div className="buttons">
-            <button className="btnSec" onClick={handleSave}>
+            <button className="btn-pri" onClick={handleSave}>
               Save preset
             </button>
-            <button className="btnSec" onClick={handleLoad}>
+            <button className="btn-pri" onClick={handleLoad}>
               Load preset
             </button>
-            <button className="btnSec" onClick={handleReset}>
+            <button className="btn-sec" onClick={handleReset}>
               Reset
             </button>
           </div>
         </div>
       </header>
-      <ul>
-        {filtered.map((item) => (
-          <li key={item.id}>
-            <strong>{item.name}</strong> — {item.brand} — {item.drawer} — $
-            {item.price_usd}
-            {item.favorite ? " ★" : ""}
-          </li>
-        ))}
-      </ul>
+
+      <section className="results">
+        <div className="results-header">
+          <h2 className="results-title">Items</h2>
+          <p className="results-count">{filtered.length} shown</p>
+        </div>
+
+        <div className="grid">
+          {filtered.map((item) => (
+            <DisplayCard key={item.id} item={item} />
+          ))}
+        </div>
+      </section>
     </main>
   )
 }
