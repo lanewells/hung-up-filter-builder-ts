@@ -6,6 +6,12 @@ import type { Filter } from "./types"
 import { loadPreset, savePreset } from "./presets"
 import DisplayCard from "./DisplayCard"
 
+type SortMode = "price-asc" | "price-desc" | "name-asc" | "name-desc"
+
+function compareByName(a: { name: string }, b: { name: string }) {
+  return a.name.localeCompare(b.name, undefined, { sensitivity: "base" })
+}
+
 function App() {
   const [drawer, setDrawer] = useState<
     | "All"
@@ -18,9 +24,10 @@ function App() {
   >("All")
   const [onlyFavorites, setOnlyFavorites] = useState(false)
   const [maxPrice, setMaxPrice] = useState<number>(300)
+  const [sortMode, setSortMode] = useState<SortMode>("price-asc")
 
   function handleSave() {
-    savePreset({ drawer, onlyFavorites, maxPrice })
+    savePreset({ drawer, onlyFavorites, maxPrice, sortMode })
   }
 
   function handleLoad() {
@@ -30,12 +37,14 @@ function App() {
     setDrawer(preset.drawer)
     setOnlyFavorites(preset.onlyFavorites)
     setMaxPrice(preset.maxPrice)
+    setSortMode(preset.sortMode)
   }
 
   function handleReset() {
     setDrawer("All")
     setOnlyFavorites(false)
     setMaxPrice(300)
+    setSortMode("price-asc")
   }
 
   const filters: Filter[] = useMemo(() => {
@@ -49,7 +58,51 @@ function App() {
     return next
   }, [drawer, onlyFavorites, maxPrice])
 
-  const filtered = applyFilters(exampleWardrobe, filters)
+  const filtered = useMemo(
+    () => applyFilters(exampleWardrobe, filters),
+    [filters]
+  )
+
+  const sorted = useMemo(() => {
+    const copy = [...filtered]
+
+    copy.sort((a, b) => {
+      switch (sortMode) {
+        case "price-asc": {
+          const byPrice = a.price_usd - b.price_usd
+          if (byPrice !== 0) return byPrice
+          const byName = compareByName(a, b)
+          if (byName !== 0) return byName
+          return a.id.localeCompare(b.id)
+        }
+        case "price-desc": {
+          const byPrice = b.price_usd - a.price_usd
+          if (byPrice !== 0) return byPrice
+          const byName = compareByName(a, b)
+          if (byName !== 0) return byName
+          return a.id.localeCompare(b.id)
+        }
+        case "name-asc": {
+          const byName = compareByName(a, b)
+          if (byName !== 0) return byName
+          const byPrice = a.price_usd - b.price_usd
+          if (byPrice !== 0) return byPrice
+          return a.id.localeCompare(b.id)
+        }
+        case "name-desc": {
+          const byName = compareByName(b, a)
+          if (byName !== 0) return byName
+          const byPrice = b.price_usd - a.price_usd
+          if (byPrice !== 0) return byPrice
+          return a.id.localeCompare(b.id)
+        }
+        default:
+          return 0
+      }
+    })
+
+    return copy
+  }, [filtered, sortMode])
 
   return (
     <main className="app">
@@ -100,6 +153,19 @@ function App() {
             <span className="range-value">{maxPrice}</span>
           </label>
 
+          <label>
+            Sort{" "}
+            <select
+              value={sortMode}
+              onChange={(e) => setSortMode(e.target.value as SortMode)}
+            >
+              <option value="price-asc">Price: low → high</option>
+              <option value="price-desc">Price: high → low</option>
+              <option value="name-asc">Name: A → Z</option>
+              <option value="name-desc">Name: Z → A</option>
+            </select>
+          </label>
+
           <div className="buttons">
             <button className="btn-pri" onClick={handleSave}>
               Save preset
@@ -117,11 +183,11 @@ function App() {
       <section className="results">
         <div className="results-header">
           <h2 className="results-title">Items</h2>
-          <p className="results-count">{filtered.length} shown</p>
+          <p className="results-count">{sorted.length} shown</p>
         </div>
 
         <div className="grid">
-          {filtered.map((item) => (
+          {sorted.map((item) => (
             <DisplayCard key={item.id} item={item} />
           ))}
         </div>
