@@ -10,8 +10,9 @@ My goal is not quantity, but to model a state focused UI problem in a way that s
 
 This project highlights frontend architecture, state modeling, and UI behavior in isolation.
 
-[Wardrobe Filter Builder demo](https://...)
-[Hung-Up repo](https://github.com/lanewells/hung-up-react) | [Hung-Up live site](https://hung-up-demo.delaneywells.dev)
+[Wardrobe Filter Builder demo](https://filter-builder.delaneywells.dev) •
+[Hung-Up repo](https://github.com/lanewells/hung-up-react) •
+[Hung-Up live site](https://hung-up-demo.delaneywells.dev)
 
 ---
 
