@@ -50,7 +50,7 @@ Mobile views with single column layout and condensed controls
 
 ---
 
-## Architecture Notes and Code Example
+## Architecture Notes & Code Example
 
 A main goal of this project was to keep filtering logic independent from the UI. I modeled the filters as a discriminated union, which makes each filter type explicit and type safe. The filtering function itself is a pure utility that can be reused, tested, or moved to the server side later.
 

@@ -1,4 +1,4 @@
-import type { WardrobeItem } from "./types"
+import type { WardrobeItem } from "../types"
 
 export const exampleWardrobe: WardrobeItem[] = [
   {
